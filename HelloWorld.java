@@ -34,6 +34,6 @@
  */
 public class HelloWorld {
   public static void main(String[] args) {
-    System.out.println("Hello, World !");hj
+    System.out.println("Hello, World !");
   }
 }
