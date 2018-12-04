@@ -1,15 +1,9 @@
-
-pipeline {
-    agent any
-   
-     stages {
-	     stage ('build') {
-		    steps {
-			   sh 'mvn --version'
-			   sh 'mvn clean install'
-			}
-		 }
-	 
-	 }   
-
+node{
+stage ('Maven check'){
+sh 'mvn -version'
+}
+stage ('build'){
+sh 'echo "building java code"'
+sh 'mvn clean install'
+}
 }
